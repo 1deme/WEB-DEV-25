@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pH Scale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .scale {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+        }
+        .horizontal-scale {
+            display: flex;
+            width: 80%;
+            border: 2px solid black;
+        }
+        .vertical-scale {
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            width: 80px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        .ph-box {
+            flex: 1;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            border-right: 1px solid black;
+        }
+        .vertical-scale .ph-box {
+            border-right: none;
+            border-bottom: 1px solid black;
+        }
+        .ph-box:last-child {
+            border-right: none;
+        }
+        /* Colors for pH scale */
+        .ph-0 { background-color: #ff0000; } /* Strong acid */
+        .ph-1 { background-color: #ff3300; }
+        .ph-2 { background-color: #ff6600; }
+        .ph-3 { background-color: #ff9900; }
+        .ph-4 { background-color: #ffcc00; }
+        .ph-5 { background-color: #ffee00; }
+        .ph-6 { background-color: #ccff00; }
+        .ph-7 { background-color: #00ff00; } /* Neutral */
+        .ph-8 { background-color: #00cc66; }
+        .ph-9 { background-color: #0099cc; }
+        .ph-10 { background-color: #0066cc; }
+        .ph-11 { background-color: #0033cc; }
+        .ph-12 { background-color: #0000ff; }
+        .ph-13 { background-color: #3300cc; }
+        .ph-14 { background-color: #6600cc; } /* Strong base */
+    </style>
+</head>
+<body>
+
+    <h1>pH Scale</h1>
+    <p>The pH scale ranges from 0 to 14, where 0 is strongly acidic, 7 is neutral, and 14 is strongly basic.</p>
+
+    <!-- Horizontal Scale -->
+    <h2>Horizontal pH Scale</h2>
+    <div class="scale">
+        <div class="horizontal-scale">
+            <div class="ph-box ph-0">0</div>
+            <div class="ph-box ph-1">1</div>
+            <div class="ph-box ph-2">2</div>
+            <div class="ph-box ph-3">3</div>
+            <div class="ph-box ph-4">4</div>
+            <div class="ph-box ph-5">5</div>
+            <div class="ph-box ph-6">6</div>
+            <div class="ph-box ph-7">7</div>
+            <div class="ph-box ph-8">8</div>
+            <div class="ph-box ph-9">9</div>
+            <div class="ph-box ph-10">10</div>
+            <div class="ph-box ph-11">11</div>
+            <div class="ph-box ph-12">12</div>
+            <div class="ph-box ph-13">13</div>
+            <div class="ph-box ph-14">14</div>
+        </div>
+    </div>
+
+    <!-- Vertical Scale -->
+    <h2>Vertical pH Scale</h2>
+    <div class="scale">
+        <div class="vertical-scale">
+            <div class="ph-box ph-14">14</div>
+            <div class="ph-box ph-13">13</div>
+            <div class="ph-box ph-12">12</div>
+            <div class="ph-box ph-11">11</div>
+            <div class="ph-box ph-10">10</div>
+            <div class="ph-box ph-9">9</div>
+            <div class="ph-box ph-8">8</div>
+            <div class="ph-box ph-7">7</div>
+            <div class="ph-box ph-6">6</div>
+            <div class="ph-box ph-5">5</div>
+            <div class="ph-box ph-4">4</div>
+            <div class="ph-box ph-3">3</div>
+            <div class="ph-box ph-2">2</div>
+            <div class="ph-box ph-1">1</div>
+            <div class="ph-box ph-0">0</div>
+        </div>
+    </div>
+
+</body>
+</html>
