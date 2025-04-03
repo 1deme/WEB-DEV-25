@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <p>If you have any questions, feel free to reach out.</p>
+
+  <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <fieldset>
+      <legend>Preferred Contact Method:</legend>
+      <input type="radio" id="contactEmail" name="contactMethod" value="email">
+      <label for="contactEmail">Email</label>
+      <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+      <label for="contactPhone">Phone</label>
+    </fieldset><br>
+
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>
+    <a href="index.html">Go Back to Home</a> |
+    <a href="about.html">Go to About</a>
+  </p>
+</body>
+</html>
